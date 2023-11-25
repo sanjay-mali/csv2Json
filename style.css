@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: #F2FFE9;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+textarea {
+    background-color: #A6CF98;
+    width: 50%;
+    margin: 0 4rem;
+    height: 200px;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+
+    border: 5px solid rgb(49, 43, 36);
+}
+label{
+    font-size: 20px;
+    margin: 2rem 0;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: #557C55;
+    color: white;
+
+}
+button:hover {
+    border: 2px solid rgb(71, 68, 65);
+    background-color: transparent;
+    color: black;
+}
+
+#jsonOutput {
+    width: 50%;
+    margin: 0 4rem;
+    border: 5px solid rgb(49, 43, 36) !important;
+    padding: 10px;
+    height: 200px;
+    /* margin-top: 20px; */
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+    .main{
+        flex-direction: column;
+    }
+}
